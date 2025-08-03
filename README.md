@@ -1,73 +1,41 @@
-# Welcome to your Lovable project
+## Challenges Faced
 
-## Project info
+During the development of the **Doctor Booking Application**, the following challenges were encountered:
 
-**URL**: https://lovable.dev/projects/fe85615e-e09a-4f2f-8224-4a150dd6904b
+### 1. Setting Up Project Structure (React + TypeScript)
+- Adapting TypeScript with React required careful typing of props, states, and API responses.
+- Managing types across multiple components without cluttering the codebase was challenging.
 
-## How can I edit this code?
+### 2. Designing Responsive UI with Tailwind CSS
+- Balancing aesthetic layout and responsiveness across devices (mobile, tablet, desktop).
+- Understanding Tailwind's utility-first approach and combining multiple classes efficiently.
+- Consistency in card spacing, button styling, and form responsiveness was iterative.
 
-There are several ways of editing your application.
+### 3. Implementing Search Functionality
+- Handling case-insensitive search for both doctor names and specializations.
+- Optimizing search performance with debouncing (optional) was considered but not implemented due to time constraints.
 
-**Use Lovable**
+### 4. Dynamic Routing to Doctor Profile
+- Managing routing using `react-router-dom` for dynamic doctor details page.
+- Correctly extracting `doctorId` from URL params and mapping it to the corresponding doctor data.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/fe85615e-e09a-4f2f-8224-4a150dd6904b) and start prompting.
+### 5. Booking Form & Validation
+- Designing a clean and intuitive appointment booking form with proper validations:
+  - Valid name and email format.
+  - Ensuring selected date/time is in the future.
+- Maintaining form state and providing real-time feedback on validation errors.
 
-Changes made via Lovable will be committed automatically to this repo.
+### 6. Backend Integration (Bonus)
+- Setting up a basic **Node.js + Express** server to serve doctor data and accept appointments.
+- Dealing with CORS issues while making frontend-backend API calls.
+- Parsing and validating incoming form data on the server.
 
-**Use your preferred IDE**
+### 7. Confirmation & Feedback UX
+- Displaying a smooth confirmation message post-booking without redirecting or reloading.
+- Maintaining clean UX for both success and error states.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 8. Git & Deployment
+- Managing GitHub repo and branches for organized development.
+- Ensuring environment variables, build folders, and CORS settings were correctly configured for deployment.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/fe85615e-e09a-4f2f-8224-4a150dd6904b) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
